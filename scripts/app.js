@@ -4,7 +4,7 @@ let displayJoke = document.getElementById("displayJoke");
 const API= 'https://icanhazdadjoke.com/';
 
 async function getJoke(){
-    response = await fetch(API, {
+    let response = await fetch(API, {
         headers: {
             'accept': 'application/json',
         }
